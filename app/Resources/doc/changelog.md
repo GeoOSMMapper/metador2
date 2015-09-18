@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.6.6
+* XML Export of dataset for GML 3.2
+* Bugfix Mandetory in GDI-Testsuite
+
 ## 2.0.6.5
 * Changed rhumsaa/uuid to ramsey/uuid
 * dataset.xml.twig: namespace mismatch
