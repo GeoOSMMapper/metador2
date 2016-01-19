@@ -18,6 +18,9 @@ The features of MetaDor2 are:
 * import XML metadata documents
 * import WMS Capabilities to create metadata-documents for this WMS services.
 
+## Demo
+
+A demo is available at: http://metador.wheregroup.com/demo
 
 ## Usage of the helptexts
 
