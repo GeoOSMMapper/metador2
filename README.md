@@ -66,3 +66,8 @@ Version 2.1 of MeTaDor2 will contain a plugin system so that it will be easier t
 ## Issues
 
 Please report issues here at Github on the [MeTaDor2 issue page](https://github.com/WhereGroup/metador2/issues).
+
+
+## Further information
+
+For our German users: The spatial data infrastructure of Germany has released a ["Conventions for Metadata"](http://www.geoportal.de/DE/GDI-DE/Arbeitskreise/Metadaten/metadaten.html) document that describes what requirements a valid metadata document should fulfill. The test-classes and example files are available at the [BKG Git-Server of the AK Metadaten](https://ims.geoportal.de/git/tree/AK-Metadaten.git).
