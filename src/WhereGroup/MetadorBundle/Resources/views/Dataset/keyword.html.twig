@@ -71,7 +71,7 @@
                     <option value="publication">Veröffentlichung</option>
                 </select>
             </div>
-        </div> 
+        </div>
     </div>
     <div class="clear"></div>
     <hr/>
@@ -108,7 +108,7 @@
         </label>
         <div class="fr">
             {% for repo, data in examples['keywords'] %}
-            <select data-id="{{ loop.index }}" 
+            <select data-id="{{ loop.index }}"
                     data-title="{{ repo }}"
                     data-date="{{ data.date }}"
                     data-type="{{ data.type }}"
@@ -134,8 +134,8 @@
         {% for repo, data in p['keyword'] %}
         {% for keyword in data.value %}
         <div>
-            <input type="hidden" name="p[keyword][{{ repo }}][date]" value="{{ data.date }}" />
-            <input type="hidden" name="p[keyword][{{ repo }}][type]" value="{{ data.type }}" />
+            <input type="hidden" name="p[keyword][{{ repo }}][date]" value="{% if data.date is defined %}{{ data.date }}{% endif %}" />
+            <input type="hidden" name="p[keyword][{{ repo }}][type]" value="{% if data.type is defined %}{{ data.type }}{% endif %}" />
             <input type="hidden" name="p[keyword][{{ repo }}][value][]" value="{{ keyword }}" />
             <label>{{ repo }} - {{ keyword }}</label>
             <div class="btn cmdDeleteSingleValue">

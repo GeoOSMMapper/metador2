@@ -357,13 +357,13 @@ $(document).ready(function() {
 
     $('#add_keyword').click(function() {
         var result = $('#result_p_keyword');
-
+        var title  = $('#p_keyword_title').val() !== '' ? $('#p_keyword_title').val() : 'noname';
         result.prepend(
             $('<div></div>').append(
-                $('<input/>').attr("type", "hidden").attr("name", "p[keyword][" + $('#p_keyword_title').val() + "][date]").val($('#p_keyword_date').val()),
-                $('<input/>').attr("type", "hidden").attr("name", "p[keyword][" + $('#p_keyword_title').val() + "][type]").val($('#p_keyword_type').val()),
-                $('<input/>').attr("type", "hidden").attr("name", "p[keyword][" + $('#p_keyword_title').val() + "][value][]").val($('#p_keyword_value').val()),
-                $('<label></label>').text($('#p_keyword_title').val() + ' - ' + $('#p_keyword_value').val()),
+                $('<input/>').attr("type", "hidden").attr("name", "p[keyword][" + title + "][date]").val($('#p_keyword_date').val()),
+                $('<input/>').attr("type", "hidden").attr("name", "p[keyword][" + title + "][type]").val($('#p_keyword_type').val()),
+                $('<input/>').attr("type", "hidden").attr("name", "p[keyword][" + title + "][value][]").val($('#p_keyword_value').val()),
+                $('<label></label>').text(title + ' - ' + $('#p_keyword_value').val()),
                 $('<div></div>').addClass("btn cmdDeleteSingleValue").append($('<div></div>').addClass('icon delete'))
             )
         );
